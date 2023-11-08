@@ -2,6 +2,8 @@
 
 <template>
 	<el-button type="primary">Success</el-button>
+  <!-- 一级路由出口 -->
+  <RouterView></RouterView>
 </template>
 
 <style scoped>
