@@ -13,7 +13,7 @@ const getGoods = async () => {
 	const res = await getDetail(route.params.id);
 	goods.value = res.result;
 };
-
+// console.log(goods);
 onMounted(() => getGoods());
 </script>
 
@@ -45,7 +45,7 @@ onMounted(() => getGoods());
 					<div class="goods-info">
 						<div class="media">
 							<!-- 图片预览区 -->
-              <ImageView/>
+              <ImageView :image-List="goods.mainPictures"/>
 							<!-- 统计数量 -->
 							<ul class="goods-sales">
 								<li>
